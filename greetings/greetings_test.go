@@ -12,7 +12,7 @@ func TestHelloName(t *testing.T) {
 	message, err := Hello(name)
 
 	if !want.MatchString(message) || err != nil {
-		t.Fatalf(`Hello("%s") = %q, %v, want match for %#q, nil`, name, message, err, want)
+		t.Fatalf(`Hello(%q) = %q, %v, want match for %#q, nil`, name, message, err, want)
 	}
 }
 
